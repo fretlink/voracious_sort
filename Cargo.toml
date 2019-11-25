@@ -1,0 +1,10 @@
+[package]
+name = "voracious_radix_sort"
+version = "0.1.0"
+authors = ["AxellePiot <axelle.piot@lyart.fr>"]
+edition = "2018"
+
+[dev-dependencies]
+afsort = "0.3.1"
+rand = "0.5.5"
+rdxsort = "0.3.0"
