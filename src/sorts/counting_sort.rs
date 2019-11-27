@@ -58,6 +58,15 @@ where
     });
 }
 
+/// # Counting sort
+///
+/// An implementation of the
+/// [Counting sort](https://en.wikipedia.org/wiki/Counting_sort)
+/// algorithm.
+///
+/// Counting sort is very fast for inputs with a small bit representation.
+///
+/// This Counting sort has been a bit customized since it takes a radix input.
 pub fn counting_sort<T>(arr: &mut [T], radix: usize)
 where
     T: Radixable<KeyType = <[T] as RadixableForContainer>::KeyType>

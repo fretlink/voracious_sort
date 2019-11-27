@@ -118,6 +118,13 @@ where
     }
 }
 
+/// # Ska sort
+///
+/// An implementation of the
+/// [Ska sort](https://probablydance.com/2016/12/27/i-wrote-a-faster-sorting-algorithm/)
+/// algorithm.
+///
+/// The Ska sort is an in place unstable radix sort.
 pub fn ska_sort<T>(arr: &mut [T], radix: usize)
 where
     T: Radixable<KeyType = <[T] as RadixableForContainer>::KeyType>
